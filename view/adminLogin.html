@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Login</title>
+    <link rel="stylesheet" href="/style/adminLogin.css">
+    <script src="/adminLogin.js"></script>
+</head>
+<body>
+    <div class="login-contain">
+        <h1>JAI-SAI-RAM DOCUMENTATIONS</h1>
+        <h2>Admin Login</h2>
+        <form id="signinForm" onsubmit="checkLogin(event)">
+            <div class="input-group">
+                <label for="">Admin Email</label>
+                <input type="email" id="adminid">
+            </div>
+            <div class="input-group">
+                <label for="">Password</label>
+                <input type="password" id="adminpassword">
+            </div>
+            <button type="submit">Login</button>
+            <p class="forgot-pass-text">Trouble Logging in? <a>Click Here!</a> </p>
+        </form>
+    </div>
+</body>
+</html>

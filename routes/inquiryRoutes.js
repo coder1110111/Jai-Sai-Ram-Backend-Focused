@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-// router.get('/', )
+const generalControls = require('../controller/generalController');
+
+router.get('/', generalControls.getInquiryPage);
+// router.post('/', generalControls)
 
 module.exports = router;
