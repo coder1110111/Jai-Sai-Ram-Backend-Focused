@@ -30,6 +30,7 @@ app.use((req, res, next) => {
 
 const PORT = process.env.PORT || 1800;
 
+// sequelize.sync({force: true})
 sequelize.sync()
 .then(result => {
     app.listen(PORT, () => {

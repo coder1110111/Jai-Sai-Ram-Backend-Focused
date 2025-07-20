@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+.company-name {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.navigation-bar {
+    display: flexbox;
+}
+
+ul {
+    display: flex;
+    background: rgb(16, 91, 151);
+    width: 100%;
+    list-style-type: none;
+    height: fit-content;
+    /* min-width: ; */
+}
+
+li {
+    padding: 15px;
+    color: aliceblue;
+}
+
