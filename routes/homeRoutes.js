@@ -5,7 +5,7 @@ const router = express.Router();
 const generalControls = require('../controller/generalController');
 
 router.get('/', generalControls.getHomePage);
-router.get('/service-provided', generalControls.getServicePage);
+router.get('/services', generalControls.getServicePage);
 router.get('/contact-us', generalControls.getContactUsPage);
 
 module.exports = router;
