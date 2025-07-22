@@ -1,0 +1,19 @@
+.page-data {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #333;
+}
+
+.page-data h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(16, 91, 151);
+    /* background: rgb(16, 91, 151); */
+}

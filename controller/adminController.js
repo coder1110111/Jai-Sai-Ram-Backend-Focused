@@ -40,3 +40,4 @@ exports.postLoginPage = async (req, res) => {
 exports.getAdminPage = (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'view', 'admin.html'));
 }
+

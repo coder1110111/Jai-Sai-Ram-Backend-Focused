@@ -1,37 +1,24 @@
 const Sequelize = require('sequelize');
 const sequelize = require('../util/database');
 
-const Admin = sequelize.define('admin', {
-
+const Query = sequelize.define('query', {
     id: {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4,
-        allowNull: false,
         primaryKey: true
     },
-    emp_id: {
+    name: {
         type: Sequelize.STRING,
         allowNull: false,
     },
-    emp_name: {
+    email: {
         type: Sequelize.STRING,
         allowNull: false
     },
-    emp_email: {
+    question: {
         type: Sequelize.STRING,
-        allowNull: false,
-        unique: true
-    },
-    password: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    owner: {
-        type: Sequelize.ENUM('owner', 'employee'),
         allowNull: false
     }
-}, {
-    timestamps : false
 });
 
-module.exports = Admin;
+module.exports = Query;

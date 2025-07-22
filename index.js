@@ -8,7 +8,6 @@ require('dotenv').config();
 const sequelize = require('./util/database');
 
 const homeRouter = require('./routes/homeRoutes');
-const inquiryRouter = require('./routes/inquiryRoutes');
 const adminRouter = require('./routes/adminRoutes');
 
 const app = express();
@@ -22,7 +21,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', homeRouter);
-app.use('/inquiry', inquiryRouter);
 app.use('/admin', adminRouter)
 app.use((req, res, next) => {
     res.sendFile(path.join(__dirname, 'view', '404.html'));
